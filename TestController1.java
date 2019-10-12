@@ -10,20 +10,25 @@ class Controller {
 		age = 0;
 
 	}
-
+	
+	//defining the parameterized constructor
+	
 	Controller(String n, String t, int a) {
 		name = n;
 		team = t;
 		age = a;
 
 	}
+	
+	// defining copy constructor
 
 	Controller(Controller cc) {
 		name = cc.name;
 		team = cc.team;
 		age = cc.age;
 	}
-
+	
+	// toString function returns the string representation of object.
 	public String toString() {
 		return "this is " + this.getName() + "of" + this.getTeam();
 	}
